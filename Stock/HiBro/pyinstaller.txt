@@ -1,0 +1,1 @@
+pyinstaller -F .\Track_Dealer.py --noconsole --hidden-import "babel.numbers"
