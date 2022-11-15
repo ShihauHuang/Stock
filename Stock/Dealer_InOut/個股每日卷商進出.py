@@ -5,7 +5,7 @@ from urllib.request import urlretrieve
 import cv2 as cv
 import pygsheets
 
-Stock_ID = 8183
+Stock_ID = 2497
 
 gc = pygsheets.authorize(service_file='Dealer-InOut-827f15aeec31.json') 
 sheet = gc.open_by_url('https://docs.google.com/spreadsheets/d/1T-VbovBG1pCGmM2wTQOR-VH-5BOtfNZLvTmqck-Qqi4/')
@@ -98,7 +98,9 @@ if dealer_list != [] :
 
 else :
     with requests.Session() as s :
+        print(123)
         page = s.get('https://bsr.twse.com.tw/bshtm/bsMenu.aspx')
+        print(456)
         soup = BeautifulSoup(page.content , 'lxml')
 
         Captcha_file = re.search('src="(.+?)"' , str(soup.findAll('img')[1])).group(1)

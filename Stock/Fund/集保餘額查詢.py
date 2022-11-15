@@ -21,8 +21,8 @@ amount = {
     14 : "1,000,001以上"
 }
 
-Stock_ID = 6477
-main_amount = 11
+Stock_ID = 8033
+main_amount = 13
 spreat_amount = 8
 
 #chrome_path = "C:/Program Files/Google/Chrome/Application/chrome.exe"
